@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+nav {
+    background-color: #222; /* Darker background for the nav */
+    padding: 10px 20px;
+    margin-bottom: 40px; /* Space between nav bar and card */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox for horizontal layout */
+}
+
+nav li {
+    margin-right: 20px; /* Space between menu items */
+}
+
+nav a {
+    color: #fff; /* White text for nav links */
+    text-decoration: none; /* Remove underline */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff; /* White background for the card */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.container:hover {
+    transform: scale(1.02); /* Scale up on hover */
+}
+
+h1 {
+    color: #333; /* Dark text for heading */
+}
+
+.stats {
+    margin-bottom: 20px;
+    color: #333; /* Dark text for stats */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #e6e6e6; /* Light gray header */
+    color: #333; /* Dark text for header */
+}
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the right */
+    margin-top: 2px;
+}
+
+canvas {
+    max-width: 150px; /* Set a reasonable size for the canvas */
+}
+
+footer {
+    background-color: #222; /* Dark background for footer */
+    color: #fff; /* White text for footer */
+    text-align: center; /* Centered text */
+    padding: 10px 0;
+    position: relative; /* Positioning for footer */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+    margin-top: 20px; /* Space above */
+}

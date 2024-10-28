@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Stats</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>System Stats Dashboard</h1>
+        <div class="stats">
+            <h2>Current System Stats</h2>
+            <p>CPU Usage: <span id="cpu-usage">Loading...</span>%</p>
+            <p>Memory Usage: <span id="memory-usage">Loading...</span>%</p>
+            <p>Disk Usage: <span id="disk-usage">Loading...</span>%</p>
+        </div>
+        <button id="refresh-button">Refresh Stats</button>
+
+        <!-- Pie Chart Section -->
+        <div class="chart-container">
+           
+            
+        </div>
+
+        <div class="historical-data">
+            <h2>Historical Data</h2>
+            <table id="historical-table">
+                <thead>
+                    <tr>
+                        <th>CPU Usage (%)</th>
+                        <th>Memory Usage (%)</th>
+                        <th>Disk Usage (%)</th>
+                    </tr>
+                </thead>
+                <tbody id="historical-body">
+                    <!-- Historical data will be populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 System Stats. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Add Chart.js -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
